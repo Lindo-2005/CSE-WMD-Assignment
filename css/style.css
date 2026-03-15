@@ -88,3 +88,14 @@ font-size:18px;
 font-size:20px;
 margin-bottom:10px;
 }
+.tip{
+background:#ecf0f1;
+padding:40px;
+text-align:center;
+margin:40px;
+border-radius:10px;
+}
+
+.tip h2{
+margin-bottom:15px;
+}
