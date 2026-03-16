@@ -128,7 +128,3 @@ font-size:18px;
 #topBtn:hover{
 background-color:#333;
 }
-#myVideo {
-  pointer-events: none;
-  cursor: default; /* Changes the cursor from a hand icon to an arrow */
-}
