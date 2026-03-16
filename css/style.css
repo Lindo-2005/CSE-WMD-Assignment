@@ -103,3 +103,9 @@ border-radius:10px;
 .tip h2{
 margin-bottom:15px;
 }
+.hero{
+background-image: url("../images/campus.jpg");
+background-size: cover;
+background-position: center;
+padding: 120px 20px;
+}
