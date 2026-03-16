@@ -48,7 +48,17 @@ Campus Survival Hub
 <li class="nav-item">
 <a class="nav-link" href="feedback.html">Feedback</a>
 </li>
-
+<form class="d-flex" role="search" onsubmit="return searchSite()">
+  <input 
+    class="form-control me-2" 
+    type="search" 
+    placeholder="Search the site..."
+    id="searchInput"
+  >
+  <button class="btn btn-outline-light" type="submit">
+    Search
+  </button>
+</form>
 </ul>
 
 </div>
@@ -70,6 +80,7 @@ Thank you! Your feedback has been submitted.
 <div class="mb-3">
 <label class="form-label">Full Name</label>
 <input type="text" class="form-control" required>
+<input type="email" class="form-control" required>
 </div>
 
 <div class="mb-3">
@@ -111,6 +122,45 @@ Submit Feedback
 function submitForm(){
 
 document.getElementById("successMessage").style.display = "block";
+
+return false;
+
+}
+
+</script>
+<script>
+
+function searchSite(){
+
+let input = document.getElementById("searchInput").value.toLowerCase();
+
+if(input.includes("first") || input.includes("guide")){
+window.location.href = "firstyear.html";
+}
+
+else if(input.includes("dorm") || input.includes("room")){
+window.location.href = "dormlife.html";
+}
+
+else if(input.includes("budget") || input.includes("money")){
+window.location.href = "budget.html";
+}
+
+else if(input.includes("resource") || input.includes("link")){
+window.location.href = "resources.html";
+}
+
+else if(input.includes("feedback") || input.includes("contact")){
+window.location.href = "feedback.html";
+}
+
+else if(input.includes("home") || input.includes("campus")){
+window.location.href = "index.html";
+}
+
+else{
+alert("Sorry, we couldn't find that topic.");
+}
 
 return false;
 
