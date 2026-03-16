@@ -132,3 +132,7 @@ background-color:#333;
 transform: scale(1.05);
 transition: 0.3s;
 }
+#tipBox{
+    font-size: 18px;
+    font-weight: 500;
+}
