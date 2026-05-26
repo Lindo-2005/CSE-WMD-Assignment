@@ -21,7 +21,6 @@
   transition: all 0.25s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-
 .resource-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(13,110,253,0.12);
@@ -29,7 +28,6 @@
   color: inherit;
   text-decoration: none;
 }
-
 .resource-icon {
   font-size: 32px;
   width: 56px;
@@ -40,54 +38,23 @@
   justify-content: center;
   flex-shrink: 0;
 }
-
 .resource-card-body { flex: 1; }
-
-.resource-card-title {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 3px;
-  color: #1a1a2e;
-}
-
-.resource-card-desc {
-  font-size: 13px;
-  color: #888;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.resource-arrow {
-  font-size: 18px;
-  color: #ccc;
-  transition: all 0.25s;
-  flex-shrink: 0;
-}
-
-.resource-card:hover .resource-arrow {
-  color: #0d6efd;
-  transform: translateX(4px);
-}
-
+.resource-card-title { font-size: 15px; font-weight: 700; margin-bottom: 3px; color: #1a1a2e; }
+.resource-card-desc { font-size: 13px; color: #888; margin: 0; line-height: 1.4; }
+.resource-arrow { font-size: 18px; color: #ccc; transition: all 0.25s; flex-shrink: 0; }
+.resource-card:hover .resource-arrow { color: #0d6efd; transform: translateX(4px); }
 .section-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #0d6efd;
-  margin-bottom: 14px;
-  margin-top: 36px;
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: #0d6efd; margin-bottom: 14px; margin-top: 36px;
 }
 </style>
 </head>
-
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="index.html">
-<img src="images/mylogo.jpg" alt="Logo" width="40" height="40" class="me-2">
-Campus Survival Hub
+<img src="images/mylogo.jpg" alt="Logo" width="40" height="40" class="me-2">Campus Survival Hub
 </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
@@ -105,17 +72,13 @@ Campus Survival Hub
 </div>
 </nav>
 
-<div class="container mt-5">
+<main class="container mt-5">
 
   <h1 class="text-center mb-2">Helpful Student Resources</h1>
-  <p class="text-center text-muted mb-5">
-    BAC students have access to several resources that help with studying,
-    assignments, and daily student life.
-  </p>
+  <p class="text-center text-muted mb-5">BAC students have access to several resources that help with studying, assignments, and daily student life.</p>
 
-  <!-- Top cards (unchanged) -->
-  <div class="row mt-3">
-    <div class="col-md-4">
+  <section class="row mt-3">
+    <article class="col-md-4">
       <div class="card">
         <img src="images/study.jpg" class="card-img-top" alt="Studying">
         <div class="card-body">
@@ -123,8 +86,8 @@ Campus Survival Hub
           <p class="card-text">Students can use the library, online tutorials, and learning platforms to improve their understanding of course material.</p>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
+    </article>
+    <article class="col-md-4">
       <div class="card">
         <img src="images/computerlab.jpg" class="card-img-top" alt="Computer Lab">
         <div class="card-body">
@@ -132,8 +95,8 @@ Campus Survival Hub
           <p class="card-text">BAC provides computer labs where students can complete assignments, especially those who do not have laptops.</p>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
+    </article>
+    <article class="col-md-4">
       <div class="card">
         <img src="images/internet.jpg" class="card-img-top" alt="Internet">
         <div class="card-body">
@@ -141,87 +104,88 @@ Campus Survival Hub
           <p class="card-text">Students have access to campus WiFi and BTC SIM cards with around <strong>6GB of data daily</strong>, helping them access online learning materials.</p>
         </div>
       </div>
+    </article>
+  </section>
+
+  <section class="mt-5">
+    <p class="section-label">🔗 Useful Online Resources</p>
+    <div class="d-flex flex-column gap-3 mb-5">
+
+      <a href="https://www.bac.ac.bw" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#e8f0fe;">🏫</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">BAC Official Website</div>
+          <p class="resource-card-desc">The official Botswana Accountancy College website for news, announcements and college information.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="https://www.studocu.com/row/institution/botswana-accountancy-college/15362" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#fff3e0;">📄</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">BAC Studocu Portal</div>
+          <p class="resource-card-desc">Find past exam papers, notes and study documents for every course at BAC — uploaded by students.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="https://www.w3schools.com" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#e8f5e9;">💻</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">W3Schools</div>
+          <p class="resource-card-desc">Learn HTML, CSS, JavaScript and more with free interactive tutorials and code examples.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="https://youtube.com/playlist?list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88&si=H0AyVnF8dgxMEtCH" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#fce4ec;">▶️</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">YouTube HTML Tutorials</div>
+          <p class="resource-card-desc">A curated playlist of beginner-friendly HTML programming tutorials to help you learn web development.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="https://moodle.bac.ac.bw/admin/tool/policy/view.php?versionid=1" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#f3e5f5;">📚</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">BAC Moodle</div>
+          <p class="resource-card-desc">Access your lecture slides, tutorial sheets and course materials uploaded by your lecturers.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="https://thitoacademics.bac.ac.bw/dashboard" target="_blank" class="resource-card">
+        <div class="resource-icon" style="background:#e0f7fa;">🏠</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">Thito Academics — Hostel Registration</div>
+          <p class="resource-card-desc">Incoming first-year students can register for BAC hostel accommodation through this portal.</p>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+
+      <a href="files/BAC_HOSTEL_CODE_OF_CONDUCT.doc" download="Code of Conduct" class="resource-card">
+        <div class="resource-icon" style="background:#fafafa; border:1px solid #eee;">📥</div>
+        <div class="resource-card-body">
+          <div class="resource-card-title">BAC Hostel Code of Conduct</div>
+          <p class="resource-card-desc">Download the official BAC hostel rules and conduct document — essential reading for all hostel residents.</p>
+        </div>
+        <span class="resource-arrow">↓</span>
+      </a>
+
     </div>
-  </div>
+  </section>
 
-  <!-- ── RESOURCE LINK CARDS ── -->
-  <div class="section-label mt-5">🔗 Useful Online Resources</div>
-
-  <div class="d-flex flex-column gap-3 mb-5">
-
-    <a href="https://www.bac.ac.bw" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#e8f0fe;">🏫</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">BAC Official Website</div>
-        <p class="resource-card-desc">The official Botswana School of Business Sciences website for news, announcements and college information.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="https://www.studocu.com/row/institution/botswana-accountancy-college/15362" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#fff3e0;">📄</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">BAC Studocu Portal</div>
-        <p class="resource-card-desc">Find past exam papers, notes and study documents for every course at BAC — uploaded by students.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="https://www.w3schools.com" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#e8f5e9;">💻</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">W3Schools</div>
-        <p class="resource-card-desc">Learn HTML, CSS, JavaScript and more with free interactive tutorials and code examples.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="https://youtube.com/playlist?list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88&si=H0AyVnF8dgxMEtCH" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#fce4ec;">▶️</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">YouTube HTML Tutorials</div>
-        <p class="resource-card-desc">A curated playlist of beginner-friendly HTML programming tutorials to help you learn web development.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="https://moodle.bac.ac.bw/admin/tool/policy/view.php?versionid=1" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#f3e5f5;">📚</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">BAC Moodle</div>
-        <p class="resource-card-desc">Access your lecture slides, tutorial sheets and course materials uploaded by your lecturers.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="https://thitoacademics.bac.ac.bw/dashboard" target="_blank" class="resource-card">
-      <div class="resource-icon" style="background:#e0f7fa;">🏠</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">Thito Academics — Hostel Registration</div>
-        <p class="resource-card-desc">Incoming first-year students can register for BAC hostel accommodation through this portal.</p>
-      </div>
-      <span class="resource-arrow">→</span>
-    </a>
-
-    <a href="files/BAC HOSTEL CODE OF CONDUCT.doc" download="Code of Conduct" class="resource-card">
-      <div class="resource-icon" style="background:#fafafa; border: 1px solid #eee;">📥</div>
-      <div class="resource-card-body">
-        <div class="resource-card-title">BAC Hostel Code of Conduct</div>
-        <p class="resource-card-desc">Download the official BAC hostel rules and conduct document — essential reading for all hostel residents.</p>
-      </div>
-      <span class="resource-arrow">↓</span>
-    </a>
-
-  </div>
-</div>
+</main>
 
 <footer class="text-center mt-5 mb-3">
   <img src="images/mylogo.jpg" width="50">
   <p>© 2026 Campus Survival Hub | Student Hostel Support Platform | Developed by Tshepang Mathanga</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
